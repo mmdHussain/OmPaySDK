@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+// MARK: - ClientTokenModel
+struct ClientTokenModel: Codable {
+    let accessToken, tokenType: String
+    let expiresOn, issuedOn: Date
+}
