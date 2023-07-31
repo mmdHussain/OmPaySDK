@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "OmPaySDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Om pay sdk is payment sdk. Use can use this for payment purpose."
 
   spec.description  = "Om pay sdk is payment sdk. Use can use this for payment purpose and secure payment checkout"
