@@ -7,23 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043D088F2A66AEC900A4153C /* CardValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D088E2A66AEC900A4153C /* CardValidations.swift */; };
+		043D08A02A66AED500A4153C /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08912A66AED500A4153C /* UIViewXRadialGradient.swift */; };
+		043D08A12A66AED500A4153C /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08922A66AED500A4153C /* UITextFieldX.swift */; };
+		043D08A22A66AED500A4153C /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08932A66AED500A4153C /* FloatRatingView.swift */; };
+		043D08A32A66AED500A4153C /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08942A66AED500A4153C /* UIButtonX.swift */; };
+		043D08A42A66AED500A4153C /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08952A66AED500A4153C /* UILabelX.swift */; };
+		043D08A52A66AED500A4153C /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08962A66AED500A4153C /* UIViewAnchorPoint.swift */; };
+		043D08A62A66AED500A4153C /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08972A66AED500A4153C /* UIViewControllerX.swift */; };
+		043D08A72A66AED500A4153C /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08982A66AED500A4153C /* UIImageViewX.swift */; };
+		043D08A82A66AED500A4153C /* MJMaterialSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08992A66AED500A4153C /* MJMaterialSwitch.swift */; };
+		043D08A92A66AED500A4153C /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D089A2A66AED500A4153C /* UIViewX.swift */; };
+		043D08AA2A66AED500A4153C /* CurvedHeaderGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D089B2A66AED500A4153C /* CurvedHeaderGradient.swift */; };
+		043D08AB2A66AED500A4153C /* CurvedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D089C2A66AED500A4153C /* CurvedHeader.swift */; };
+		043D08AC2A66AED500A4153C /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D089D2A66AED500A4153C /* UILabel+Extensions.swift */; };
+		043D08AD2A66AED500A4153C /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D089E2A66AED500A4153C /* UIVisualEffectViewX.swift */; };
+		043D08AE2A66AED500A4153C /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D089F2A66AED500A4153C /* UISliderX.swift */; };
+		043D08B22A66AEDD00A4153C /* CardDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08B02A66AEDD00A4153C /* CardDetailsVC.swift */; };
+		043D08B32A66AEDD00A4153C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08B12A66AEDD00A4153C /* HomeVC.swift */; };
+		043D08C62A66AF3700A4153C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08C42A66AF3700A4153C /* Constant.swift */; };
+		043D08C72A66AF3700A4153C /* ClientApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D08C52A66AF3700A4153C /* ClientApi.swift */; };
+		043D08CF2A66AFB400A4153C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D08CE2A66AFB300A4153C /* Main.storyboard */; };
+		043D08D52A66B8AB00A4153C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D08D42A66B8AB00A4153C /* Assets.xcassets */; };
 		04826DAE2A66A57100635FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04826DAD2A66A57100635FC1 /* AppDelegate.swift */; };
 		04826DB02A66A57100635FC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04826DAF2A66A57100635FC1 /* SceneDelegate.swift */; };
 		04826DB22A66A57100635FC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04826DB12A66A57100635FC1 /* ViewController.swift */; };
-		04826DB52A66A57100635FC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04826DB32A66A57100635FC1 /* Main.storyboard */; };
-		04826DB72A66A57300635FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04826DB62A66A57300635FC1 /* Assets.xcassets */; };
 		04826DBA2A66A57300635FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04826DB82A66A57300635FC1 /* LaunchScreen.storyboard */; };
+		048C01B32A7243F100DE5924 /* NewAlamofireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C01B22A7243F100DE5924 /* NewAlamofireHelper.swift */; };
+		048DBC7A2A690B3600B2FC0C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC732A690B3500B2FC0C /* BaseViewController.swift */; };
+		048DBC7B2A690B3600B2FC0C /* AlamofireHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC742A690B3500B2FC0C /* AlamofireHelper.swift */; };
+		048DBC7C2A690B3600B2FC0C /* PDUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC752A690B3500B2FC0C /* PDUserDefaults.swift */; };
+		048DBC7D2A690B3600B2FC0C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC762A690B3500B2FC0C /* Utils.swift */; };
+		048DBC7E2A690B3600B2FC0C /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC772A690B3500B2FC0C /* SwiftyUserDefaults.swift */; };
+		048DBC7F2A690B3600B2FC0C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC782A690B3500B2FC0C /* Parser.swift */; };
+		048DBC802A690B3600B2FC0C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC792A690B3500B2FC0C /* LocationManager.swift */; };
+		048DBC822A69177600B2FC0C /* CardNumberExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC812A69177600B2FC0C /* CardNumberExample.swift */; };
+		048DBC842A69463200B2FC0C /* OmPayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC832A69463200B2FC0C /* OmPayExtension.swift */; };
+		048DBC862A694CBD00B2FC0C /* ApiRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC852A694CBD00B2FC0C /* ApiRequests.swift */; };
+		048DBC882A69705400B2FC0C /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC872A69705400B2FC0C /* ModelClass.swift */; };
+		04C898CA2A6BB2BD00047E17 /* ERProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C898C92A6BB2BC00047E17 /* ERProgressHud.swift */; };
+		04D031EE2A6BFA4C00E5E128 /* CreateTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D031ED2A6BFA4C00E5E128 /* CreateTransactionVC.swift */; };
+		93BF222F2A762C050011AE6B /* OmPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BF22252A762C050011AE6B /* OmPay.framework */; };
+		93BF22362A762C050011AE6B /* OmPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF22352A762C050011AE6B /* OmPayTests.swift */; };
+		93BF223A2A762C050011AE6B /* OmPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BF22252A762C050011AE6B /* OmPay.framework */; };
+		93BF223B2A762C050011AE6B /* OmPay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93BF22252A762C050011AE6B /* OmPay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8A2E5041DC5D293F5964148 /* Pods_OmPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC71AEEF8C992414607ADDB5 /* Pods_OmPaySDK.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		93BF22302A762C050011AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04826DA22A66A57100635FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93BF22242A762C050011AE6B;
+			remoteInfo = OmPay;
+		};
+		93BF22322A762C050011AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04826DA22A66A57100635FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04826DA92A66A57100635FC1;
+			remoteInfo = OmPaySDK;
+		};
+		93BF22382A762C050011AE6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04826DA22A66A57100635FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93BF22242A762C050011AE6B;
+			remoteInfo = OmPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E6477B2A72FD720078D503 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				93BF223B2A762C050011AE6B /* OmPay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		043D088E2A66AEC900A4153C /* CardValidations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardValidations.swift; sourceTree = "<group>"; };
+		043D08912A66AED500A4153C /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		043D08922A66AED500A4153C /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		043D08932A66AED500A4153C /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
+		043D08942A66AED500A4153C /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		043D08952A66AED500A4153C /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		043D08962A66AED500A4153C /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		043D08972A66AED500A4153C /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		043D08982A66AED500A4153C /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		043D08992A66AED500A4153C /* MJMaterialSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJMaterialSwitch.swift; sourceTree = "<group>"; };
+		043D089A2A66AED500A4153C /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		043D089B2A66AED500A4153C /* CurvedHeaderGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedHeaderGradient.swift; sourceTree = "<group>"; };
+		043D089C2A66AED500A4153C /* CurvedHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedHeader.swift; sourceTree = "<group>"; };
+		043D089D2A66AED500A4153C /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		043D089E2A66AED500A4153C /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		043D089F2A66AED500A4153C /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		043D08B02A66AEDD00A4153C /* CardDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsVC.swift; sourceTree = "<group>"; };
+		043D08B12A66AEDD00A4153C /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		043D08C42A66AF3700A4153C /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		043D08C52A66AF3700A4153C /* ClientApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientApi.swift; sourceTree = "<group>"; };
+		043D08CE2A66AFB300A4153C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		043D08D42A66B8AB00A4153C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04826DAA2A66A57100635FC1 /* OmPaySDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmPaySDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04826DAD2A66A57100635FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04826DAF2A66A57100635FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04826DB12A66A57100635FC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04826DB42A66A57100635FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04826DB62A66A57300635FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04826DB92A66A57300635FC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04826DBB2A66A57300635FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048C01B22A7243F100DE5924 /* NewAlamofireHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlamofireHelper.swift; sourceTree = "<group>"; };
+		048DBC732A690B3500B2FC0C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		048DBC742A690B3500B2FC0C /* AlamofireHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHelper.swift; sourceTree = "<group>"; };
+		048DBC752A690B3500B2FC0C /* PDUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDUserDefaults.swift; sourceTree = "<group>"; };
+		048DBC762A690B3500B2FC0C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		048DBC772A690B3500B2FC0C /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
+		048DBC782A690B3500B2FC0C /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		048DBC792A690B3500B2FC0C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		048DBC812A69177600B2FC0C /* CardNumberExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberExample.swift; sourceTree = "<group>"; };
+		048DBC832A69463200B2FC0C /* OmPayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmPayExtension.swift; sourceTree = "<group>"; };
+		048DBC852A694CBD00B2FC0C /* ApiRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequests.swift; sourceTree = "<group>"; };
+		048DBC872A69705400B2FC0C /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
+		04C898C92A6BB2BC00047E17 /* ERProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERProgressHud.swift; sourceTree = "<group>"; };
+		04D031ED2A6BFA4C00E5E128 /* CreateTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionVC.swift; sourceTree = "<group>"; };
+		26845DFD528EB960CF23DBF8 /* Pods-OmPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmPaySDK.release.xcconfig"; path = "Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK.release.xcconfig"; sourceTree = "<group>"; };
+		93BF22252A762C050011AE6B /* OmPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OmPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BF222E2A762C050011AE6B /* OmPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BF22352A762C050011AE6B /* OmPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmPayTests.swift; sourceTree = "<group>"; };
+		CC71AEEF8C992414607ADDB5 /* Pods_OmPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB88917B394E50DACFD5C8BD /* Pods-OmPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmPaySDK.debug.xcconfig"; path = "Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +148,89 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A2E5041DC5D293F5964148 /* Pods_OmPaySDK.framework in Frameworks */,
+				93BF223A2A762C050011AE6B /* OmPay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BF22222A762C050011AE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BF222B2A762C050011AE6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BF222F2A762C050011AE6B /* OmPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043D088D2A66AEC900A4153C /* CardValidations */ = {
+			isa = PBXGroup;
+			children = (
+				043D088E2A66AEC900A4153C /* CardValidations.swift */,
+				048DBC812A69177600B2FC0C /* CardNumberExample.swift */,
+			);
+			path = CardValidations;
+			sourceTree = "<group>";
+		};
+		043D08902A66AED500A4153C /* DX */ = {
+			isa = PBXGroup;
+			children = (
+				043D08912A66AED500A4153C /* UIViewXRadialGradient.swift */,
+				043D08922A66AED500A4153C /* UITextFieldX.swift */,
+				043D08932A66AED500A4153C /* FloatRatingView.swift */,
+				043D08942A66AED500A4153C /* UIButtonX.swift */,
+				043D08952A66AED500A4153C /* UILabelX.swift */,
+				043D08962A66AED500A4153C /* UIViewAnchorPoint.swift */,
+				043D08972A66AED500A4153C /* UIViewControllerX.swift */,
+				043D08982A66AED500A4153C /* UIImageViewX.swift */,
+				043D08992A66AED500A4153C /* MJMaterialSwitch.swift */,
+				043D089A2A66AED500A4153C /* UIViewX.swift */,
+				043D089B2A66AED500A4153C /* CurvedHeaderGradient.swift */,
+				043D089C2A66AED500A4153C /* CurvedHeader.swift */,
+				043D089D2A66AED500A4153C /* UILabel+Extensions.swift */,
+				043D089E2A66AED500A4153C /* UIVisualEffectViewX.swift */,
+				043D089F2A66AED500A4153C /* UISliderX.swift */,
+			);
+			path = DX;
+			sourceTree = "<group>";
+		};
+		043D08AF2A66AEDD00A4153C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				043D08B02A66AEDD00A4153C /* CardDetailsVC.swift */,
+				043D08B12A66AEDD00A4153C /* HomeVC.swift */,
+				04D031ED2A6BFA4C00E5E128 /* CreateTransactionVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		043D08C32A66AF3700A4153C /* AppUrl */ = {
+			isa = PBXGroup;
+			children = (
+				048DBC832A69463200B2FC0C /* OmPayExtension.swift */,
+				043D08C42A66AF3700A4153C /* Constant.swift */,
+				043D08C52A66AF3700A4153C /* ClientApi.swift */,
+				048DBC852A694CBD00B2FC0C /* ApiRequests.swift */,
+			);
+			path = AppUrl;
+			sourceTree = "<group>";
+		};
 		04826DA12A66A57100635FC1 = {
 			isa = PBXGroup;
 			children = (
 				04826DAC2A66A57100635FC1 /* OmPaySDK */,
+				93BF22342A762C050011AE6B /* OmPayTests */,
 				04826DAB2A66A57100635FC1 /* Products */,
+				D8E6FD4C262DAD7604C659D9 /* Pods */,
+				BB7C2A18C732E2C9E4DAF91A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				04826DAA2A66A57100635FC1 /* OmPaySDK.app */,
+				93BF22252A762C050011AE6B /* OmPay.framework */,
+				93BF222E2A762C050011AE6B /* OmPayTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,36 +247,143 @@
 		04826DAC2A66A57100635FC1 /* OmPaySDK */ = {
 			isa = PBXGroup;
 			children = (
+				04C898C82A6BB2BC00047E17 /* ERProgressHud */,
+				043D08D42A66B8AB00A4153C /* Assets.xcassets */,
+				048DBC722A690B3500B2FC0C /* ThirdParty */,
+				043D08C32A66AF3700A4153C /* AppUrl */,
+				043D08AF2A66AEDD00A4153C /* Screens */,
+				043D08902A66AED500A4153C /* DX */,
+				043D088D2A66AEC900A4153C /* CardValidations */,
 				04826DAD2A66A57100635FC1 /* AppDelegate.swift */,
 				04826DAF2A66A57100635FC1 /* SceneDelegate.swift */,
 				04826DB12A66A57100635FC1 /* ViewController.swift */,
-				04826DB32A66A57100635FC1 /* Main.storyboard */,
-				04826DB62A66A57300635FC1 /* Assets.xcassets */,
+				043D08CE2A66AFB300A4153C /* Main.storyboard */,
 				04826DB82A66A57300635FC1 /* LaunchScreen.storyboard */,
 				04826DBB2A66A57300635FC1 /* Info.plist */,
+				048DBC872A69705400B2FC0C /* ModelClass.swift */,
 			);
 			path = OmPaySDK;
 			sourceTree = "<group>";
 		};
+		048DBC722A690B3500B2FC0C /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				048DBC732A690B3500B2FC0C /* BaseViewController.swift */,
+				048DBC742A690B3500B2FC0C /* AlamofireHelper.swift */,
+				048DBC752A690B3500B2FC0C /* PDUserDefaults.swift */,
+				048DBC762A690B3500B2FC0C /* Utils.swift */,
+				048DBC772A690B3500B2FC0C /* SwiftyUserDefaults.swift */,
+				048DBC782A690B3500B2FC0C /* Parser.swift */,
+				048DBC792A690B3500B2FC0C /* LocationManager.swift */,
+				048C01B22A7243F100DE5924 /* NewAlamofireHelper.swift */,
+			);
+			name = ThirdParty;
+			path = AppUrl/ThirdParty;
+			sourceTree = "<group>";
+		};
+		04C898C82A6BB2BC00047E17 /* ERProgressHud */ = {
+			isa = PBXGroup;
+			children = (
+				04C898C92A6BB2BC00047E17 /* ERProgressHud.swift */,
+			);
+			path = ERProgressHud;
+			sourceTree = "<group>";
+		};
+		93BF22342A762C050011AE6B /* OmPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				93BF22352A762C050011AE6B /* OmPayTests.swift */,
+			);
+			path = OmPayTests;
+			sourceTree = "<group>";
+		};
+		BB7C2A18C732E2C9E4DAF91A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC71AEEF8C992414607ADDB5 /* Pods_OmPaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8E6FD4C262DAD7604C659D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB88917B394E50DACFD5C8BD /* Pods-OmPaySDK.debug.xcconfig */,
+				26845DFD528EB960CF23DBF8 /* Pods-OmPaySDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		93BF22202A762C050011AE6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		04826DA92A66A57100635FC1 /* OmPaySDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04826DBE2A66A57300635FC1 /* Build configuration list for PBXNativeTarget "OmPaySDK" */;
 			buildPhases = (
+				CAEBCC3F4AEDE61E8153E3CA /* [CP] Check Pods Manifest.lock */,
 				04826DA62A66A57100635FC1 /* Sources */,
 				04826DA72A66A57100635FC1 /* Frameworks */,
 				04826DA82A66A57100635FC1 /* Resources */,
+				14DB8B4B37669FA56F53D050 /* [CP] Embed Pods Frameworks */,
+				04E6477B2A72FD720078D503 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				93BF22392A762C050011AE6B /* PBXTargetDependency */,
 			);
 			name = OmPaySDK;
 			productName = OmPaySDK;
 			productReference = 04826DAA2A66A57100635FC1 /* OmPaySDK.app */;
 			productType = "com.apple.product-type.application";
+		};
+		93BF22242A762C050011AE6B /* OmPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93BF22402A762C050011AE6B /* Build configuration list for PBXNativeTarget "OmPay" */;
+			buildPhases = (
+				93BF22202A762C050011AE6B /* Headers */,
+				93BF22212A762C050011AE6B /* Sources */,
+				93BF22222A762C050011AE6B /* Frameworks */,
+				93BF22232A762C050011AE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmPay;
+			productName = OmPay;
+			productReference = 93BF22252A762C050011AE6B /* OmPay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93BF222D2A762C050011AE6B /* OmPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93BF22412A762C050011AE6B /* Build configuration list for PBXNativeTarget "OmPayTests" */;
+			buildPhases = (
+				93BF222A2A762C050011AE6B /* Sources */,
+				93BF222B2A762C050011AE6B /* Frameworks */,
+				93BF222C2A762C050011AE6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93BF22312A762C050011AE6B /* PBXTargetDependency */,
+				93BF22332A762C050011AE6B /* PBXTargetDependency */,
+			);
+			name = OmPayTests;
+			productName = OmPayTests;
+			productReference = 93BF222E2A762C050011AE6B /* OmPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,11 +392,18 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					04826DA92A66A57100635FC1 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					93BF22242A762C050011AE6B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					93BF222D2A762C050011AE6B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 04826DA92A66A57100635FC1;
 					};
 				};
 			};
@@ -116,6 +421,8 @@
 			projectRoot = "";
 			targets = (
 				04826DA92A66A57100635FC1 /* OmPaySDK */,
+				93BF22242A762C050011AE6B /* OmPay */,
+				93BF222D2A762C050011AE6B /* OmPayTests */,
 			);
 		};
 /* End PBXProject section */
@@ -126,35 +433,150 @@
 			buildActionMask = 2147483647;
 			files = (
 				04826DBA2A66A57300635FC1 /* LaunchScreen.storyboard in Resources */,
-				04826DB72A66A57300635FC1 /* Assets.xcassets in Resources */,
-				04826DB52A66A57100635FC1 /* Main.storyboard in Resources */,
+				043D08CF2A66AFB400A4153C /* Main.storyboard in Resources */,
+				043D08D52A66B8AB00A4153C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BF22232A762C050011AE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BF222C2A762C050011AE6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14DB8B4B37669FA56F53D050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAEBCC3F4AEDE61E8153E3CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmPaySDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04826DA62A66A57100635FC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043D08A52A66AED500A4153C /* UIViewAnchorPoint.swift in Sources */,
+				043D08A42A66AED500A4153C /* UILabelX.swift in Sources */,
+				048DBC802A690B3600B2FC0C /* LocationManager.swift in Sources */,
+				048DBC7D2A690B3600B2FC0C /* Utils.swift in Sources */,
+				043D08AD2A66AED500A4153C /* UIVisualEffectViewX.swift in Sources */,
+				043D08AC2A66AED500A4153C /* UILabel+Extensions.swift in Sources */,
+				043D08AA2A66AED500A4153C /* CurvedHeaderGradient.swift in Sources */,
+				048DBC7A2A690B3600B2FC0C /* BaseViewController.swift in Sources */,
+				043D08A12A66AED500A4153C /* UITextFieldX.swift in Sources */,
+				043D08A82A66AED500A4153C /* MJMaterialSwitch.swift in Sources */,
+				043D088F2A66AEC900A4153C /* CardValidations.swift in Sources */,
+				048DBC862A694CBD00B2FC0C /* ApiRequests.swift in Sources */,
+				043D08A92A66AED500A4153C /* UIViewX.swift in Sources */,
+				048DBC7B2A690B3600B2FC0C /* AlamofireHelper.swift in Sources */,
+				048DBC882A69705400B2FC0C /* ModelClass.swift in Sources */,
+				043D08C62A66AF3700A4153C /* Constant.swift in Sources */,
+				043D08A22A66AED500A4153C /* FloatRatingView.swift in Sources */,
 				04826DB22A66A57100635FC1 /* ViewController.swift in Sources */,
+				043D08A62A66AED500A4153C /* UIViewControllerX.swift in Sources */,
+				048DBC7F2A690B3600B2FC0C /* Parser.swift in Sources */,
+				048DBC842A69463200B2FC0C /* OmPayExtension.swift in Sources */,
+				043D08A32A66AED500A4153C /* UIButtonX.swift in Sources */,
+				04C898CA2A6BB2BD00047E17 /* ERProgressHud.swift in Sources */,
+				043D08AE2A66AED500A4153C /* UISliderX.swift in Sources */,
 				04826DAE2A66A57100635FC1 /* AppDelegate.swift in Sources */,
+				048DBC7C2A690B3600B2FC0C /* PDUserDefaults.swift in Sources */,
+				048DBC7E2A690B3600B2FC0C /* SwiftyUserDefaults.swift in Sources */,
+				043D08B32A66AEDD00A4153C /* HomeVC.swift in Sources */,
+				043D08B22A66AEDD00A4153C /* CardDetailsVC.swift in Sources */,
+				043D08A72A66AED500A4153C /* UIImageViewX.swift in Sources */,
+				043D08C72A66AF3700A4153C /* ClientApi.swift in Sources */,
+				04D031EE2A6BFA4C00E5E128 /* CreateTransactionVC.swift in Sources */,
+				043D08A02A66AED500A4153C /* UIViewXRadialGradient.swift in Sources */,
 				04826DB02A66A57100635FC1 /* SceneDelegate.swift in Sources */,
+				048C01B32A7243F100DE5924 /* NewAlamofireHelper.swift in Sources */,
+				043D08AB2A66AED500A4153C /* CurvedHeader.swift in Sources */,
+				048DBC822A69177600B2FC0C /* CardNumberExample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BF22212A762C050011AE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BF222A2A762C050011AE6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93BF22362A762C050011AE6B /* OmPayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		04826DB32A66A57100635FC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04826DB42A66A57100635FC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		93BF22312A762C050011AE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93BF22242A762C050011AE6B /* OmPay */;
+			targetProxy = 93BF22302A762C050011AE6B /* PBXContainerItemProxy */;
 		};
+		93BF22332A762C050011AE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04826DA92A66A57100635FC1 /* OmPaySDK */;
+			targetProxy = 93BF22322A762C050011AE6B /* PBXContainerItemProxy */;
+		};
+		93BF22392A762C050011AE6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93BF22242A762C050011AE6B /* OmPay */;
+			targetProxy = 93BF22382A762C050011AE6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		04826DB82A66A57300635FC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -217,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,25 +706,32 @@
 		};
 		04826DBF2A66A57300635FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB88917B394E50DACFD5C8BD /* Pods-OmPaySDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L62RTG4C67;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmPaySDK/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OmPay;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jf.OmPaySDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OMPayPaymentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,29 +741,140 @@
 		};
 		04826DC02A66A57300635FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26845DFD528EB960CF23DBF8 /* Pods-OmPaySDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L62RTG4C67;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OmPaySDK/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OmPay;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jf.OmPaySDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.OMPayPaymentApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93BF223C2A762C050011AE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L62RTG4C67;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = Shrinkom.OmPay;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		93BF223D2A762C050011AE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L62RTG4C67;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = Shrinkom.OmPay;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93BF223E2A762C050011AE6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Shrinkom.OmPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmPaySDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OmPaySDK";
+			};
+			name = Debug;
+		};
+		93BF223F2A762C050011AE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Shrinkom.OmPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmPaySDK.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OmPaySDK";
 			};
 			name = Release;
 		};
@@ -355,6 +895,24 @@
 			buildConfigurations = (
 				04826DBF2A66A57300635FC1 /* Debug */,
 				04826DC02A66A57300635FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93BF22402A762C050011AE6B /* Build configuration list for PBXNativeTarget "OmPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BF223C2A762C050011AE6B /* Debug */,
+				93BF223D2A762C050011AE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93BF22412A762C050011AE6B /* Build configuration list for PBXNativeTarget "OmPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93BF223E2A762C050011AE6B /* Debug */,
+				93BF223F2A762C050011AE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

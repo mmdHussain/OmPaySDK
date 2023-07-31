@@ -28,17 +28,17 @@ class Utils: NSObject {
         return  dateFormatter.string(from: date!)
     }
     
-    class func DarkModeSetting(VC : UIViewController) {
-        if Defaults[PDUserDefaults.ModeType] == "0" {
-            if #available(iOS 13.0, *) {
-                VC.overrideUserInterfaceStyle = .light
-            }
-        }else {
-            if #available(iOS 13.0, *) {
-                VC.overrideUserInterfaceStyle = .dark
-            }
-        }
-    }
+//    class func DarkModeSetting(VC : UIViewController) {
+//        if Defaults[PDUserDefaults.ModeType] == "0" {
+//            if #available(iOS 13.0, *) {
+//                VC.overrideUserInterfaceStyle = .light
+//            }
+//        }else {
+//            if #available(iOS 13.0, *) {
+//                VC.overrideUserInterfaceStyle = .dark
+//            }
+//        }
+//    }
     
      class func progressBar(progressview : UIProgressView)
         {
@@ -934,28 +934,28 @@ class Utils: NSObject {
         return "\(Int(round(discount)))% Off"
     }
        
-    class func hourCalculate() -> Double {
-        let dtFormatter = DateFormatter()
-        dtFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
-        let strRegisDate = Defaults[PDUserDefaults.RegisDate]
-        let strToday = dtFormatter.string(from: Date())
-        print("\(strRegisDate)\n\(strToday)")
-        //let DS = newS.toDate(withFormat: "dd-MM-YYYY HH:mm:ss")
-        let DE = strRegisDate.toDate(withFormat: "YYYY-MM-dd HH:mm:ss")
-        let DC = strToday.toDate(withFormat: "YYYY-MM-dd HH:mm:ss")
-        //print("newS = \(DS!) \n newE = \(DE!) \n newC = \(DC!)")
-        //print("newS = \(newS) \n newE = \(newE) \n newC = \(newC)")
-        var secondsBetween: TimeInterval = DC!.timeIntervalSince(DE!)
-        secondsBetween = (secondsBetween - 19800)
-        
-        var counter = 0
-        counter = Int(secondsBetween)
-        
-        print("\(String(format: "%02d", counter/3600)) : \(String(format: "%02d", (counter % 3600)/60)) : \(String(format: "%02d", counter % 60))")
-        
-        print(secondsBetween/3600)
-        return Double(secondsBetween/3600)
-    }
+//    class func hourCalculate() -> Double {
+//        let dtFormatter = DateFormatter()
+//        dtFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+//        let strRegisDate = Defaults[PDUserDefaults.RegisDate]
+//        let strToday = dtFormatter.string(from: Date())
+//        print("\(strRegisDate)\n\(strToday)")
+//        //let DS = newS.toDate(withFormat: "dd-MM-YYYY HH:mm:ss")
+//        let DE = strRegisDate.toDate(withFormat: "YYYY-MM-dd HH:mm:ss")
+//        let DC = strToday.toDate(withFormat: "YYYY-MM-dd HH:mm:ss")
+//        //print("newS = \(DS!) \n newE = \(DE!) \n newC = \(DC!)")
+//        //print("newS = \(newS) \n newE = \(newE) \n newC = \(newC)")
+//        var secondsBetween: TimeInterval = DC!.timeIntervalSince(DE!)
+//        secondsBetween = (secondsBetween - 19800)
+//
+//        var counter = 0
+//        counter = Int(secondsBetween)
+//        
+//        print("\(String(format: "%02d", counter/3600)) : \(String(format: "%02d", (counter % 3600)/60)) : \(String(format: "%02d", counter % 60))")
+//
+//        print(secondsBetween/3600)
+//        return Double(secondsBetween/3600)
+//    }
     
     
 //    class Checkbox: UIButton
@@ -1044,3 +1044,31 @@ func showAlert(_ title: String? = "", message: String?, completion: @escaping (_
     }
     
 }
+
+extension String {
+    func formattedExpiryDate(maxLength: Int = 5) -> String {
+        let allowedCharacterSet = CharacterSet(charactersIn: "0123456789")
+        let filtered = self.components(separatedBy: allowedCharacterSet.inverted).joined()
+        
+        if filtered.count > maxLength {
+            let index = filtered.index(filtered.startIndex, offsetBy: maxLength)
+            return String(filtered[..<index])
+        }
+        
+        let formattedDate: String
+        if filtered.count <= 2 {
+            formattedDate = filtered
+        } else {
+            let index = filtered.index(filtered.startIndex, offsetBy: 2)
+            formattedDate = filtered[..<index] + "/" + filtered[index...]
+        }
+        
+        return formattedDate
+    }
+}
+
+
+
+
+
+

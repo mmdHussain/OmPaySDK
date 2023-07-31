@@ -8,10 +8,14 @@
 import UIKit
 import Foundation
 import Alamofire
+import Toast_Swift
+import UIKit
 
 
 //typealias voidRequestCompletionBlock = (_ response:[String:Any],_ data:Data?,_ error:Any?) -> (Void)
 typealias voidRequestCompletionBlock = (_ response:NSDictionary,_ data:Data?,_ error:Any?) -> (Void)
+typealias voidRequestCompletionBlock_CreditNonce = (NSDictionary, Data?, Error?) -> Void
+
 
 struct Connectivity {
     static let sharedInstance = NetworkReachabilityManager()!
@@ -20,36 +24,248 @@ struct Connectivity {
     }
 }
 
-class AlamofireHelper: NSObject
-{
+class AlamofireHelper: NSObject  {
     static let POST_METHOD = "POST"
     static let GET_METHOD = "GET"
     static let PUT_METHOD = "PUT"
     var dataBlock:voidRequestCompletionBlock={_,_,_ in};
+    var dataBlock_CreditNonce:voidRequestCompletionBlock_CreditNonce={_,_,_ in};
     
     override init() {
         super.init()
     }
-    func getResponseFromURL(url : String,methodName : String,paramData : [String:Any]? , block:@escaping voidRequestCompletionBlock)
-    {
+    func showCustomToast(message: String) {
+            let toastView = ToastView()
+            toastView.showToast(message: message)
+    }
+   
+//MARK: ---Get Client Token Response---
+    func getClientTokenResponse(url: String, methodName: String, paramData: String?, block: @escaping voidRequestCompletionBlock) {
+        self.dataBlock = block
+        let strInputString = "\(CLIENT_CREDENTIALS.CLIENT_ID):\(CLIENT_CREDENTIALS.CLIENT_SECRET)"
+        print("strInputString:", strInputString)
+        var strEncodedString: String = ""
+        if let encodedString = BASE64_CONVERSION().base64EncodeString(strInputString) {
+            print("encoded string: \(encodedString)")
+            strEncodedString = encodedString
+        } else {
+            showCustomToast(message: "Failed to encode the string...")
+            print("Failed to encode the string...")
+        }
+
+        let headers: [String: String] = [
+            SDK_HEADERS.ContentType: SDK_HEADERS_VALUES.ContentTypeValue,
+            SDK_HEADERS.Authorization: "\(SDK_HEADERS_VALUES.BasicAuthorizationValue) \(strEncodedString)"
+        ]
+        print("Headers:- \(headers)")
+        print("URL of \(url): \(url) \n Parameters \(String(describing: paramData))")
+        if methodName == AlamofireHelper.POST_METHOD {
+            print("Post method...")
+            guard let postData = paramData?.data(using: .utf8) else {
+                print("Invalid paramData for POST method.")
+                return
+            }
+
+            var request = URLRequest(url: URL(string: url)!)
+            request.httpMethod = AlamofireHelper.POST_METHOD
+            for (key, value) in headers {
+                request.setValue(value, forHTTPHeaderField: key)
+            }
+            request.httpBody = postData
+
+            AF.request(request).responseJSON { response in
+                switch response.result {
+                case .success(_):
+                    if let value = response.value as? [String: Any] {
+                        self.dataBlock(value as NSDictionary, response.data, nil)
+                    }
+                    break
+
+                case .failure(_):
+                    if let error = response.error {
+                        let dictResponse: [String: Any] = [:]
+                        self.dataBlock(dictResponse as NSDictionary, response.data, error)
+                    }
+                    break
+                }
+            }
+        }
+    }
+    
+    
+//MARK: ---GetCreditCardNonce Response---
+    func getCreditNonceResponse(url: String, methodName: String, client_token: String ,paramData: String?, block: @escaping voidRequestCompletionBlock_CreditNonce) {
+        self.dataBlock_CreditNonce = block
+        let headers: [String: String] = [
+            SDK_HEADERS.ContentType: SDK_HEADERS_VALUES.ContentTypeValue,
+            SDK_HEADERS.Authorization: "\(SDK_HEADERS_VALUES.BearerAuthorizationValue)  \(client_token)"
+        ]
+        print("Headers of CreditcardNonce:- \(headers)")
+        print("URL of \(url): \(url) \n Parameters \(String(describing: paramData))")
+        
+        if methodName == AlamofireHelper.POST_METHOD {
+            print("Post method...")
+            guard let postData = paramData?.data(using: .utf8) else {
+                print("Invalid paramData for POST method.")
+                return
+            }
+ 
+            var request = URLRequest(url: URL(string: url)!)
+            request.httpMethod = HTTPMethod.post.rawValue
+            for (key, value) in headers {
+                request.setValue(value, forHTTPHeaderField: key)
+            }
+            request.httpBody = postData
+           
+            AF.request(request).responseJSON { response in
+                print("response:-",response)
+                switch response.result {
+                case .success(_):
+                    if let value = response.value as? [String: Any] {
+                        self.dataBlock_CreditNonce(value as NSDictionary  ,response.data,nil)
+                    }
+                case .failure(_):
+                    if let error = response.error {
+                        let dictResponse: [String: Any] = [:]
+                        self.dataBlock_CreditNonce(dictResponse as NSDictionary ,response.data,nil)
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    func TransactionsGetClientToken(url: String, methodName: String, paramData: String?, block: @escaping voidRequestCompletionBlock) {
+        self.dataBlock = block
+        let strInputString = "\(CLIENT_CREDENTIALS.CLIENT_ID):\(CLIENT_CREDENTIALS.CLIENT_SECRET)"
+        print("strInputString:", strInputString)
+        var strEncodedString: String = ""
+        if let encodedString = BASE64_CONVERSION().base64EncodeString(strInputString) {
+            print("encoded string: \(encodedString)")
+            strEncodedString = encodedString
+        } else {
+            showCustomToast(message: "Failed to encode the string...")
+            print("Failed to encode the string...")
+        }
+
+        let headers: [String: String] = [
+            SDK_HEADERS.ContentType: SDK_HEADERS_VALUES.ContentTypeValue,
+            SDK_HEADERS.Authorization: "\(SDK_HEADERS_VALUES.BasicAuthorizationValue) \(strEncodedString)"
+        ]
+        print("Headers:- \(headers)")
+        print("URL of \(url): \(url) \n Parameters \(String(describing: paramData))")
+        if methodName == AlamofireHelper.POST_METHOD {
+            print("Post method...")
+            guard let postData = paramData?.data(using: .utf8) else {
+                print("Invalid paramData for POST method.")
+                return
+            }
+
+            var request = URLRequest(url: URL(string: url)!)
+            request.httpMethod = AlamofireHelper.POST_METHOD
+            for (key, value) in headers {
+                request.setValue(value, forHTTPHeaderField: key)
+            }
+            request.httpBody = postData
+            
+            AF.request(request).responseJSON { response in
+                // Get the status code from the response
+                        if let httpURLResponse = response.response {
+                            let statusCode = httpURLResponse.statusCode
+                            print("Status Code: \(statusCode)")
+                            
+                            if statusCode == 404 {
+                               // self.viewFailureResponse.isHidden = false
+                               // self.viewMain.isHidden = true
+                                Defaults[PDUserDefaults.StatusCode] = "\(statusCode)"
+                            }
+                            // You can handle the status code here as needed
+                        }
+                switch response.result {
+                case .success(_):
+                    if let value = response.value as? [String: Any] {
+                        self.dataBlock(value as NSDictionary, response.data, nil)
+                    }
+                    break
+
+                case .failure(_):
+                    if let error = response.error {
+                        let dictResponse: [String: Any] = [:]
+                        print("dictResponse=\(dictResponse)")
+                        self.dataBlock(dictResponse as NSDictionary, response.data, error)
+                    }
+                    break
+                }
+            }
+            
+        }
+    }
+
+/*
+ import Alamofire
+
+ func getCreditNonceResponse(url: String, methodName: String, client_token: String, paramData: String?, block: @escaping voidRequestCompletionBlock_CreditNonce) {
+     // ... Your existing code ...
+
+     if methodName == AlamofireHelper.POST_METHOD {
+         // ... Your existing code ...
+
+         // Make the API request using Alamofire
+         AF.request(url, method: .post, parameters: paramData, encoding: JSONEncoding.default, headers: [SDK_HEADERS.ContentType: SDK_HEADERS_VALUES.ContentTypeValue, SDK_HEADERS.Authorization: "\(SDK_HEADERS_VALUES.BearerAuthorizationValue)  \(client_token)"])
+             .responseJSON { response in
+                 switch response.result {
+                 case .success(let jsonData):
+                     if let jsonDict = jsonData as? [String: Any] {
+                         // Access the JSON data directly as a dictionary
+                         // Handle the response accordingly, calling the completion block with the data
+                         self.dataBlock_CreditNonce(jsonDict as NSDictionary, response.data, nil)
+                     } else if let jsonArray = jsonData as? [[String: Any]] {
+                         // Access the JSON data as an array of dictionaries
+                         // Handle the response accordingly, calling the completion block with the data
+                         self.dataBlock_CreditNonce(jsonArray as NSArray, response.data, nil)
+                     }
+                 case .failure(let error):
+                     let dictResponse: [String: Any] = [:]
+                     self.dataBlock_CreditNonce(dictResponse as NSDictionary, response.data, error)
+                 }
+             }
+     }
+ }
+
+ */
+
+
+    
+   /*func getResponseFromURL(url : String,methodName : String,paramData : [String:Any]? , block:@escaping voidRequestCompletionBlock) {
         
         self.dataBlock = block
-       // let urlString:String = AppUrl.mainDomain + url
-        let headers = ["Api-Key" : "156c4675-9608-4591-1122-3433", "User-Id":"", "Auth-Token" : "" ]
-        print("URL of \(url): \(url) \n Parameters \(String(describing: paramData))")
-        if (methodName == AlamofireHelper.POST_METHOD)
-        {
+        let strInputString = "\(CLIENT_CREDENTIALS.CLIENT_ID) : \(CLIENT_CREDENTIALS.CLIENT_SECRET)"
+        print("strInputString:",strInputString)
+        var strEncodedString: String = ""
+        if let encodedString = BASE64_CONVERSION().base64EncodeString(strInputString) {
+            print("encoded string: \(encodedString)")
+            strEncodedString = encodedString
+        }else{
+            showCustomToast(message: "Failed to encode the string...")
+            print("Failed to encode the string...")
+        }
             
-            AF.request(url, method: .post, parameters: paramData, encoding:JSONEncoding.default, headers: nil).responseJSON {
+        let headers = [SDK_HEADERS.ContentType: SDK_HEADERS_VALUES.ContentTypeValue ,
+                       SDK_HEADERS.Authorization: "\(SDK_HEADERS_VALUES.AuthorizationValue) \(strEncodedString)" ]
+        print("Headers:- \(headers)")
+       
+        print("URL of \(url): \(url) \n Parameters \(String(describing: paramData))")
+        if (methodName == AlamofireHelper.POST_METHOD)  {
+            print("Post method...")
+            AF.request(url, method: .post, parameters: paramData, encoding:JSONEncoding.default, headers: HTTPHeaders.init(headers)).responseJSON {
                 response in
                     switch(response.result)
                     {
                         
                     case .success(_):
-                        if response.value != nil
-                        {
+                        if response.value != nil  {
                             self.dataBlock((response.value as? [String:Any])! as NSDictionary,response.data,nil)
-                          //  print("Response : \(Utility.conteverDictToJson(dict: response.result.value as! [String:Any]))")
+                        
                         }
                         break
                         
@@ -64,34 +280,37 @@ class AlamofireHelper: NSObject
                 }
 
             }
-        
-        else if(methodName == AlamofireHelper.GET_METHOD)
-        {
-            AF.request(url, method: .get,encoding:JSONEncoding.default, headers: nil).responseJSON
-                {  response in
-                switch(response.result)
-                    {
-                        
-                    case .success(_):
-                        if response.value != nil
-                        {
-                            self.dataBlock((response.value as? [String:Any])! as NSDictionary,response.data,nil)
-                        }
-                        break
-                        
-                    case .failure(_):
-                        if response.error != nil
-                        {
-                            let dictResponse:[String:Any] = [:]
-                            self.dataBlock(dictResponse as NSDictionary,response.data,response.error!)
-                        }
-                        break
-                    }
-            }
-
-        }
-    }
-    func getResponseFromPDFURL(url : String,methodName : String,paramData : [String:Any]? , block:@escaping voidRequestCompletionBlock)
+      }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   /* func getResponseFromPDFURL(url : String,methodName : String,paramData : [String:Any]? , block:@escaping voidRequestCompletionBlock)
     {
         
         self.dataBlock = block
@@ -149,7 +368,7 @@ class AlamofireHelper: NSObject
             }
 
         }
-            }
+            }*/
         /*func getResponseFromURL(url : String,methodName : String,paramData : [String:Any]?,image : UIImage, block:@escaping voidRequestCompletionBlock)
         {
             if (methodName == AlamofireHelper.POST_METHOD)
