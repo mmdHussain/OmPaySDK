@@ -47,11 +47,11 @@
 		048DBC882A69705400B2FC0C /* ModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048DBC872A69705400B2FC0C /* ModelClass.swift */; };
 		04C898CA2A6BB2BD00047E17 /* ERProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C898C92A6BB2BC00047E17 /* ERProgressHud.swift */; };
 		04D031EE2A6BFA4C00E5E128 /* CreateTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D031ED2A6BFA4C00E5E128 /* CreateTransactionVC.swift */; };
+		7CAD8AB57D8B66AE404F0E5C /* Pods_OmPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28596ED4A91397D12FAEFE /* Pods_OmPaySDK.framework */; };
 		93BF222F2A762C050011AE6B /* OmPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BF22252A762C050011AE6B /* OmPay.framework */; };
 		93BF22362A762C050011AE6B /* OmPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BF22352A762C050011AE6B /* OmPayTests.swift */; };
 		93BF223A2A762C050011AE6B /* OmPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93BF22252A762C050011AE6B /* OmPay.framework */; };
 		93BF223B2A762C050011AE6B /* OmPay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93BF22252A762C050011AE6B /* OmPay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		99FB84F4A8316D9B2F5B8E49 /* Pods_OmPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE19D6B91E04C6B50823F78 /* Pods_OmPaySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,12 +135,12 @@
 		048DBC872A69705400B2FC0C /* ModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClass.swift; sourceTree = "<group>"; };
 		04C898C92A6BB2BC00047E17 /* ERProgressHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ERProgressHud.swift; sourceTree = "<group>"; };
 		04D031ED2A6BFA4C00E5E128 /* CreateTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionVC.swift; sourceTree = "<group>"; };
-		27367DB78038B346AC4AB75D /* Pods-OmPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmPaySDK.debug.xcconfig"; path = "Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK.debug.xcconfig"; sourceTree = "<group>"; };
-		37EE8FB314E95BB65C933EEE /* Pods-OmPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmPaySDK.release.xcconfig"; path = "Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK.release.xcconfig"; sourceTree = "<group>"; };
+		7EB0890C4A7721093231AADB /* Pods-OmPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmPaySDK.release.xcconfig"; path = "Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK.release.xcconfig"; sourceTree = "<group>"; };
 		93BF22252A762C050011AE6B /* OmPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OmPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BF222E2A762C050011AE6B /* OmPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BF22352A762C050011AE6B /* OmPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmPayTests.swift; sourceTree = "<group>"; };
-		AAE19D6B91E04C6B50823F78 /* Pods_OmPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8F51FBD4A95D3EF7146A9A /* Pods-OmPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmPaySDK.debug.xcconfig"; path = "Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK.debug.xcconfig"; sourceTree = "<group>"; };
+		DA28596ED4A91397D12FAEFE /* Pods_OmPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93BF223A2A762C050011AE6B /* OmPay.framework in Frameworks */,
-				99FB84F4A8316D9B2F5B8E49 /* Pods_OmPaySDK.framework in Frameworks */,
+				7CAD8AB57D8B66AE404F0E5C /* Pods_OmPaySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +231,7 @@
 				93BF22342A762C050011AE6B /* OmPayTests */,
 				04826DAB2A66A57100635FC1 /* Products */,
 				D8E6FD4C262DAD7604C659D9 /* Pods */,
-				FC2DDA00E2A8504AD6F5B2DB /* Frameworks */,
+				ADCFD0E022F1EA126D04C867 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,21 +296,21 @@
 			path = OmPayTests;
 			sourceTree = "<group>";
 		};
+		ADCFD0E022F1EA126D04C867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA28596ED4A91397D12FAEFE /* Pods_OmPaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8E6FD4C262DAD7604C659D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				27367DB78038B346AC4AB75D /* Pods-OmPaySDK.debug.xcconfig */,
-				37EE8FB314E95BB65C933EEE /* Pods-OmPaySDK.release.xcconfig */,
+				BC8F51FBD4A95D3EF7146A9A /* Pods-OmPaySDK.debug.xcconfig */,
+				7EB0890C4A7721093231AADB /* Pods-OmPaySDK.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		FC2DDA00E2A8504AD6F5B2DB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AAE19D6B91E04C6B50823F78 /* Pods_OmPaySDK.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,12 +330,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04826DBE2A66A57300635FC1 /* Build configuration list for PBXNativeTarget "OmPaySDK" */;
 			buildPhases = (
-				CAAC7A86EF56A434E38EA77A /* [CP] Check Pods Manifest.lock */,
+				C41A0021F2ADACAE8BF0E876 /* [CP] Check Pods Manifest.lock */,
 				04826DA62A66A57100635FC1 /* Sources */,
 				04826DA72A66A57100635FC1 /* Frameworks */,
 				04826DA82A66A57100635FC1 /* Resources */,
 				04E6477B2A72FD720078D503 /* Embed Frameworks */,
-				2422097D0F4F6E589B6A4EE6 /* [CP] Embed Pods Frameworks */,
+				490761C206312C07597047DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -454,7 +454,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2422097D0F4F6E589B6A4EE6 /* [CP] Embed Pods Frameworks */ = {
+		490761C206312C07597047DB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,7 +471,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmPaySDK/Pods-OmPaySDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CAAC7A86EF56A434E38EA77A /* [CP] Check Pods Manifest.lock */ = {
+		C41A0021F2ADACAE8BF0E876 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -705,7 +705,7 @@
 		};
 		04826DBF2A66A57300635FC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27367DB78038B346AC4AB75D /* Pods-OmPaySDK.debug.xcconfig */;
+			baseConfigurationReference = BC8F51FBD4A95D3EF7146A9A /* Pods-OmPaySDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -740,7 +740,7 @@
 		};
 		04826DC02A66A57300635FC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37EE8FB314E95BB65C933EEE /* Pods-OmPaySDK.release.xcconfig */;
+			baseConfigurationReference = 7EB0890C4A7721093231AADB /* Pods-OmPaySDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

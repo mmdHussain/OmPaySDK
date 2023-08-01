@@ -23,6 +23,10 @@ Pod::Spec.new do |spec|
 
   spec.exclude_files = "Classes/Exclude"
 
-
+  spec.dependency 'Alamofire'
+  spec.dependency 'IQKeyboardManager'
+  spec.dependency 'Toast-Swift'
+  spec.dependency 'SkyFloatingLabelTextField'
+  spec.dependency 'SwiftyJSON'
 
 end
